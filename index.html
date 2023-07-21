@@ -17,7 +17,7 @@ body {
     text-align: center;
 }
 .header {
-  padding: 40px;
+  padding: 20px;
   text-align: center;
   background: #00CE06;
   color: white;
@@ -94,11 +94,17 @@ body {
 </style>
 </head>
 <body>
-
+<div class="navbar">
+  <a href="home">Home Page</a>
+  <a href="games">Games</a>
+  <a href="abt">About Alex</a>
+  <a href="contact" class="right">Contact</a>
+</div>
 <div class="header">
 <h1 id="demo">Good Evening</h1>
+  <p id="text">Do you like games, check mine out.</p>
   <h6 id="te">Good Evening</h6>
-<p id="text">Do you like games, check mine out.</p>
+
 <script>
 if (new Date().getHours() < 18) {
   document.getElementById("demo").innerHTML = "Good day!";
@@ -124,15 +130,6 @@ if (new Date().getHours() < 18) {
   document.getElementById("te").style.visibility = "hidden";
   </script>
 </div>
-
-<div class="navbar">
-  <a href="home">Home Page</a>
-  <a href="games">Games</a>
-  <a href="abt">About Alex</a>
-  <a href="contact" class="right">Contact</a>
-</div>
-
-
 
 <div class="footer">
   <h2>The things I'm working on</h2>
