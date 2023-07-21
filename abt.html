@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,25 +8,27 @@
 * {
   box-sizing: border-box;
 }
-p {
-  background-image: url('img_girl.jpg');
-}
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+  background-color: #333;
 }
-
+.copyright {
+    text-align: center;
+}
 .header {
-  padding: 40px;
+  padding: 20px;
   text-align: center;
-  background: #536C22;
+  background: #00CE06;
   color: white;
 }
 
 .header h1 {
   font-size: 40px;
 }
-
+.gameleft {
+    background-color: #333;
+}
 .navbar {
   overflow: hidden;
   background-color: #333;
@@ -50,7 +51,6 @@ body {
   background-color: #ddd;
   color: black;
 }
-
 .row {  
   display: flex;
   flex-wrap: wrap;
@@ -78,7 +78,7 @@ body {
 .footer {
   padding: 20px;
   text-align: center;
-  background: #ddd;
+  background: #464646;
 }
 
 @media screen and (max-width: 700px) {
@@ -96,24 +96,54 @@ body {
 </style>
 </head>
 <body>
-
-<div class="header">
-  <h1>About Alex</h1>
-  <p>The creator of the page and the games.</p>
-</div>
-
 <div class="navbar">
-  <a href="">Home Page</a>
+  <a href="index.html">Home Page</a>
   <a href="games">Games</a>
   <a href="abt">About Alex</a>
   <a href="contact" class="right">Contact</a>
 </div>
+<div class="header">
+<h1 id="demo">Good Evening</h1>
+  <p id="text">Do you like games, check mine out.</p>
+  <h6 id="te">Good Evening</h6>
 
-
+<script>
+if (new Date().getHours() < 18) {
+  document.getElementById("demo").innerHTML = "Good day!";
+}
+  let x = Math.floor((Math.random() * 5) + 1);
+  document.getElementById("te").innerHTML = x;
+  if(document.getElementById("te").innerHTML == 2)
+  {
+    document.getElementById("text").innerHTML = "Only good games!";
+  }
+    if(document.getElementById("te").innerHTML == 3)
+  {
+    document.getElementById("text").innerHTML = "Learn to code and get money.";
+  }
+    if(document.getElementById("te").innerHTML == 4)
+  {
+    document.getElementById("text").innerHTML = "Intresting. You found me. I'm number 4 btw.";
+  }
+    if(document.getElementById("te").innerHTML == 5)
+  {
+    document.getElementById("text").innerHTML = "Do you know how to code?";
+  }
+  document.getElementById("te").style.visibility = "hidden";
+  </script>
+</div>
 
 <div class="footer">
-  <h2>Footer</h2>
+  <h2>The things I'm working on</h2>
 </div>
-  <div class="phon" style="height:200px;">Image</div>
+<div class="gameleft">
+<img src="public/fnaf.png" alt="Freddy's Hell" width="300" height="300">
+<h2 style="position:relative;left: 752px;left: -63px;op: -696px;top: -678px;nt-family: Helvetica;padding: 367px;">
+        Freddy's Hell is an first person horror game, based on FNAF(Five nights at Freddy's by Scott Cawthon), where you need to find secrets and play as Freddy. You can find it on <a href="https://gamejolt.com/c/fhell-n2saj80" class="right">GameJolt or here</a>. This is my first GameJolt project. Hope you will like it!
+      </h2>
+<div class="copyright">
+  <h6>© 2023 - 2023 https://errorgamess.github.io/ - All Rights Reserved. 
+    Last Updated : 07/21/2023 13:38:11</h6>
+</div>
 </body>
 </html>
